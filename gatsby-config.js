@@ -13,6 +13,17 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Fugu. Creative developer`,
+        short_name: `Fugu`,
+        start_url: `/`,
+        background_color: `#F49E0B`,
+        theme_color: `#F49E0B`,
+        icon: `src/assets/favicon.png`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-gtag",
       options: {
         trackingIds: ["UA-1725698-1"],
